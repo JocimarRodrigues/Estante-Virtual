@@ -1,9 +1,11 @@
+import './Formulario.css'
 import CampoTexto from '../components/CampoTexto';
-import LivrosCadastrados from '../LivrosCadastrados'
+import Botao from '../components/Botao'
+
 
 const Formulario = (props) => {
     return (
-        <section>
+        <section className='formulario'>
             <form>
                 <CampoTexto 
                 label="Titulo do livro"
@@ -29,6 +31,9 @@ const Formulario = (props) => {
                 label="Preço"
                 placeholder="Digite o preço por unidade"
                 />
+                <Botao>
+                    Criar Livro
+                </Botao>
             </form>
         </section>
     )

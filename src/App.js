@@ -1,4 +1,3 @@
-import "./App.css";
 import Banner from "./components/Banner";
 import CampoTexto from "./components/CampoTexto";
 import Formulario from "./Formulario";
