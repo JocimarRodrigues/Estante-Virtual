@@ -3,11 +3,11 @@ import "./LivrosCadastrados.css";
 const LivrosCadastrados = (props) => {
   console.log(props);
   return (
-    <section>
+    <section className='lista-livros'>
       {props.livros.map((livro) => (
-        <div key={livro.titulo} className='lista-livros'>
-          <h1>{livro.titulo}</h1>
+        <div key={livro.titulo}>
           <img src={livro.imagem}></img>
+          <h1>{livro.titulo}</h1>   
         </div>
       ))}
     </section>
