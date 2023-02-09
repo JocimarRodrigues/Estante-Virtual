@@ -1,42 +1,65 @@
-import './Formulario.css'
-import CampoTexto from '../components/CampoTexto';
-import Botao from '../components/Botao'
-
+import "./Formulario.css";
+import CampoTexto from "../components/CampoTexto";
+import Botao from "../components/Botao";
+import { useState } from "react";
 
 const Formulario = (props) => {
-    return (
-        <section className='formulario'>
-            <form>
-                <CampoTexto 
-                label="Titulo do livro"
-                placeholder="Digite o titulo."
+  const [nome, setNome] = useState("");
+  const [genero, setGenero] = useState("");
+  const [imagem, setImagem] = useState("");
+  const [quantidade, setQuantidade] = useState();
+  const [preco, setPreco] = useState();
 
-                />
-                <CampoTexto 
-                label="Genero"
-                placeholder="Digite um gênero."
+  const cadastraLivro = (e) => {
+    e.preventDefault();
+    props.cadastraLivro({
+      nome,
+      genero,
+      imagem,
+      quantidade,
+      preco
+    });
+  };
 
-                />
-                <CampoTexto 
-                label="Imagem"
-                placeholder="Digite o endereço da imagem"
-                
-                />
-                <CampoTexto 
-                label="Quantidade"
-                placeholder="Digite a quantidade disponível para venda."
-                />
+  return (
+    <section className="formulario">
+      <form onSubmit={cadastraLivro}>
+        <CampoTexto
+          label="Titulo do livro"
+          placeholder="Digite o titulo."
+          valor={nome}
+          aoAlterado={(valor) => setNome(valor)}
+        />
+        <CampoTexto
+          label="Genero"
+          placeholder="Digite um gênero."
+          valor={genero}
+          aoAlterado={(valor) => setGenero(valor)}
+        />
 
-                <CampoTexto 
-                label="Preço"
-                placeholder="Digite o preço por unidade"
-                />
-                <Botao>
-                    Criar Livro
-                </Botao>
-            </form>
-        </section>
-    )
-}
+        <CampoTexto
+          label="Imagem"
+          placeholder="Digite o endereço da imagem"
+          valor={imagem}
+          aoAlterado={(valor) => setImagem(valor)}
+        />
+        <CampoTexto
+          label="Quantidade"
+          placeholder="Digite a quantidade disponível para venda."
+          valor={quantidade}
+          aoAlterado={(valor) => setQuantidade(valor)}
+        />
+
+        <CampoTexto
+          label="Preço"
+          placeholder="Digite o preço por unidade"
+          valor={preco}
+          aoAlterado={(valor) => setPreco(valor)}
+        />
+        <Botao>Criar Livro</Botao>
+      </form>
+    </section>
+  );
+};
 
 export default Formulario;
