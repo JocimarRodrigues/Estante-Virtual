@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Banner from "./components/Banner";
+import Estante from "./components/Estante";
 import Formulario from "./Formulario";
 import LivrosCadastrados from "./LivrosCadastrados";
 
@@ -51,6 +52,7 @@ function App() {
       <Formulario
       aoNovoLivroCadastrado={livro => AoNovoLivroAdicionado(livro)}
       />
+      {livros.map(livro => <Estante key={livro.titulo} nome={livro.titulo} />)}
     </div>
   );
 }

@@ -3,12 +3,15 @@ import CampoTexto from "../components/CampoTexto";
 import Botao from "../components/Botao";
 import { useState } from "react";
 
+
 const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [genero, setGenero] = useState("");
   const [imagem, setImagem] = useState("");
   const [quantidade, setQuantidade] = useState("");
   const [preco, setPreco] = useState("");
+
+ 
 
   const cadastraLivro = (e) => {
     e.preventDefault();
@@ -59,6 +62,7 @@ const Formulario = (props) => {
         />
         <Botao>Criar Livro</Botao>
       </form>
+     
     </section>
   );
 };
