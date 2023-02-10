@@ -37,18 +37,19 @@ function App() {
 
   const [livrosAdicionados, setLivrosAdicionados] = useState([]);
 
-  const aoNovoLivroAdicionado = (novoLivro) => {
-    setLivrosAdicionados([...livrosAdicionados, novoLivro]);
-  };
+  const AoNovoLivroAdicionado = (livro) => {
+    console.log(livro)
+    setLivrosAdicionados([
+      ...livrosAdicionados, livro
+    ])
+  }
 
   return (
     <div className="App">
       <Banner />
       <LivrosCadastrados livros={livros} />
       <Formulario
-        cadastraLivro={(novoLivro) => {
-          aoNovoLivroAdicionado(novoLivro);
-        }}
+      aoNovoLivroCadastrado={livro => AoNovoLivroAdicionado(livro)}
       />
     </div>
   );

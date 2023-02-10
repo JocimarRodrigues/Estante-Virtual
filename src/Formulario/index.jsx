@@ -7,12 +7,12 @@ const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [genero, setGenero] = useState("");
   const [imagem, setImagem] = useState("");
-  const [quantidade, setQuantidade] = useState();
-  const [preco, setPreco] = useState();
+  const [quantidade, setQuantidade] = useState("");
+  const [preco, setPreco] = useState("");
 
   const cadastraLivro = (e) => {
     e.preventDefault();
-    props.cadastraLivro({
+    props.aoNovoLivroCadastrado({
       nome,
       genero,
       imagem,
@@ -20,6 +20,7 @@ const Formulario = (props) => {
       preco
     });
   };
+
 
   return (
     <section className="formulario">
@@ -47,14 +48,14 @@ const Formulario = (props) => {
           label="Quantidade"
           placeholder="Digite a quantidade disponível para venda."
           valor={quantidade}
-          aoAlterado={(valor) => setQuantidade(valor)}
+          aoAlterado={(valor) => setQuantidade(parseInt(valor))}
         />
 
         <CampoTexto
           label="Preço"
           placeholder="Digite o preço por unidade"
           valor={preco}
-          aoAlterado={(valor) => setPreco(valor)}
+          aoAlterado={(valor) => setPreco(parseInt(valor))}
         />
         <Botao>Criar Livro</Botao>
       </form>
