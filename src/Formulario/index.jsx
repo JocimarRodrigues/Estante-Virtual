@@ -2,6 +2,7 @@ import "./Formulario.css";
 import CampoTexto from "../components/CampoTexto";
 import Botao from "../components/Botao";
 import { useState } from "react";
+import ListaSuspensa from "../components/ListaSuspensa";
 
 
 const Formulario = (props) => {
@@ -32,33 +33,37 @@ const Formulario = (props) => {
           label="Titulo do livro"
           placeholder="Digite o titulo."
           valor={titulo}
+          tipo={'string'}
           aoAlterado={(valor) => setTitulo(valor)}
         />
-        <CampoTexto
-          label="Genero"
-          placeholder="Digite um gênero."
-          valor={genero}
-          aoAlterado={(valor) => setGenero(valor)}
-        />
-
         <CampoTexto
           label="Imagem"
           placeholder="Digite o endereço da imagem"
           valor={imagem}
+          tipo={'string'}
           aoAlterado={(valor) => setImagem(valor)}
         />
         <CampoTexto
           label="Quantidade"
           placeholder="Digite a quantidade disponível para venda."
           valor={quantidade}
-          aoAlterado={(valor) => setQuantidade(parseInt(valor))}
+          tipo={'number'}
+          aoAlterado={(valor) => setQuantidade(valor)}
         />
 
         <CampoTexto
           label="Preço"
           placeholder="Digite o preço por unidade"
           valor={preco}
-          aoAlterado={(valor) => setPreco(parseInt(valor))}
+          tipo={'number'}
+          aoAlterado={(valor) => setPreco(valor)}
+        />
+        <ListaSuspensa 
+        obrigatorio={true}
+        label="Generos"
+        itens={props.livros}
+        valor={genero}
+        aoAlterado={(valor) => setGenero(valor)}
         />
         <Botao>Criar Livro</Botao>
       </form>

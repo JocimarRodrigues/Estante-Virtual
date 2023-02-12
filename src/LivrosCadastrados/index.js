@@ -10,6 +10,8 @@ const LivrosCadastrados = (props) => {
         <div key={livro.titulo}>
           <img src={livro.imagem} alt={livro.imagem}></img>
           <h1>{livro.titulo}</h1>
+          <h1>{livro.genero}</h1>
+          <h1>{livro.quantidade}</h1>
           <h1>{livro.preco}</h1>         
         </div>
          

@@ -16,25 +16,53 @@ function App() {
     {
       imagem: "/images/chika1.png",
       titulo: "Harry Potter",
-      genero: "Fantasia-Medieval",
+      genero: "Fantasia",
       preco: 23,
       quantidade: 5,
     },
     {
       imagem: "/images/chika.png",
-      titulo: "Harry Pottera",
-      genero: "Fantasia-Medieval",
+      titulo: "Star Wars",
+      genero: "SCI-FI",
       preco: 40,
       quantidade: 5,
     },
     {
       imagem: "/images/chika1.png",
-      titulo: "Harry Potterxcz",
-      genero: "Fantasia-Medieval",
+      titulo: "Gladiador",
+      genero: "História",
       preco: 10,
       quantidade: 5,
     },
   ];
+
+  let categorias = [
+    {
+      nome: 'Fantasia-Medieval',
+      corPrimaria: '',
+      corSecundaria: ''
+    },
+    {
+      nome: 'Fantasia-Medieval',
+      corPrimaria: '',
+      corSecundaria: ''
+    },
+    {
+      nome: 'Fantasia-Medieval',
+      corPrimaria: '',
+      corSecundaria: ''
+    },
+    {
+      nome: 'Fantasia-Medieval',
+      corPrimaria: '',
+      corSecundaria: ''
+    },
+    {
+      nome: 'Fantasia-Medieval',
+      corPrimaria: '',
+      corSecundaria: ''
+    },
+  ]
 
   const [livrosAdicionados, setLivrosAdicionados] = useState(livros);
 
@@ -49,6 +77,7 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario
+      livros={livros.map((livro) => livro.genero)}
       aoNovoLivroCadastrado={livro => AoNovoLivroAdicionado(livro)}
       />
       {livros.map(livro => <Estante 
