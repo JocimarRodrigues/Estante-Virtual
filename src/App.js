@@ -17,29 +17,29 @@ function App() {
       imagem: "/images/chika1.png",
       titulo: "Harry Potter",
       genero: "Fantasia-Medieval",
-      preco: 50,
+      preco: 23,
       quantidade: 5,
     },
     {
       imagem: "/images/chika.png",
       titulo: "Harry Pottera",
       genero: "Fantasia-Medieval",
-      preco: 50,
+      preco: 40,
       quantidade: 5,
     },
     {
       imagem: "/images/chika1.png",
       titulo: "Harry Potterxcz",
       genero: "Fantasia-Medieval",
-      preco: 50,
+      preco: 10,
       quantidade: 5,
     },
   ];
 
-  const [livrosAdicionados, setLivrosAdicionados] = useState([]);
+  const [livrosAdicionados, setLivrosAdicionados] = useState(livros);
 
   const AoNovoLivroAdicionado = (livro) => {
-    console.log(livro)
+    console.log(livrosAdicionados)
     setLivrosAdicionados([
       ...livrosAdicionados, livro
     ])
@@ -48,11 +48,18 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <LivrosCadastrados livros={livros} />
       <Formulario
       aoNovoLivroCadastrado={livro => AoNovoLivroAdicionado(livro)}
       />
-      {livros.map(livro => <Estante key={livro.titulo} nome={livro.titulo} />)}
+      {livros.map(livro => <Estante 
+      key={livro.titulo} 
+      imagem={livro.imagem}
+      titulo={livro.titulo}
+      genero={livro.genero}
+      preco={livro.preco}
+      quantidade={livro.quantidade}
+       />)}
+       <LivrosCadastrados  livros={livrosAdicionados}/>
     </div>
   );
 }

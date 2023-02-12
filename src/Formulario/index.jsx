@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 const Formulario = (props) => {
-  const [nome, setNome] = useState("");
+  const [titulo, setTitulo] = useState("");
   const [genero, setGenero] = useState("");
   const [imagem, setImagem] = useState("");
   const [quantidade, setQuantidade] = useState("");
@@ -16,7 +16,7 @@ const Formulario = (props) => {
   const cadastraLivro = (e) => {
     e.preventDefault();
     props.aoNovoLivroCadastrado({
-      nome,
+      titulo,
       genero,
       imagem,
       quantidade,
@@ -31,8 +31,8 @@ const Formulario = (props) => {
         <CampoTexto
           label="Titulo do livro"
           placeholder="Digite o titulo."
-          valor={nome}
-          aoAlterado={(valor) => setNome(valor)}
+          valor={titulo}
+          aoAlterado={(valor) => setTitulo(valor)}
         />
         <CampoTexto
           label="Genero"

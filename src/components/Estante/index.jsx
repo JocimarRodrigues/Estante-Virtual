@@ -1,12 +1,20 @@
-import './Estante.css';
+import LivrosCadastrados from "../../LivrosCadastrados";
+import NovoLivroCadastrado from "../novoLivroCadastrado";
+import { useState } from "react";
+import "./Estante.css";
+
+
 
 const Estante = (props) => {
-    return (
-        <div className='estante'>
-            <h3>{props.nome}</h3>
-            <h2>Teste</h2>
-        </div>
-    )
-}
+
+  return (
+    <section>
+      <div className="estante">
+        <h3>{props.titulo}</h3>
+        
+      </div>
+    </section>
+  );
+};
 
 export default Estante;
