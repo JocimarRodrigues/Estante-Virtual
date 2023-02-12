@@ -4,7 +4,8 @@ const Banner = () => {
     return (
         <header>
             <div className="container-header">
-            <h1>Universo da Fantasia</h1>
+            <h1>Estante Virtual</h1>
+            <img src='/images/cabecalho.png'></img>
             </div>
         </header>
     )

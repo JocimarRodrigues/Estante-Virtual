@@ -3,3 +3,7 @@
     background-color: red;
     text-align: center;
 }
+
+.container-header img {
+    max-width: 100%;
+}
