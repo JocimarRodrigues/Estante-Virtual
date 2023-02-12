@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   color: white;
 }
 
@@ -17,3 +18,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* background: linear-gradient(to right, #000000, #434343); */
+
+
+/* ../public/images/BackgroundLivraria.png */

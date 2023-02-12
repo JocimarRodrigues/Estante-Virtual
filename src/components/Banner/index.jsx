@@ -2,9 +2,8 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <header>
+        <header className='topo'>
             <div className="container-header">
-            <h1>Estante Virtual</h1>
             <img src='/images/cabecalho.png'></img>
             </div>
         </header>

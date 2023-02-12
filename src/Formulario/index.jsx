@@ -4,15 +4,12 @@ import Botao from "../components/Botao";
 import { useState } from "react";
 import ListaSuspensa from "../components/ListaSuspensa";
 
-
 const Formulario = (props) => {
   const [titulo, setTitulo] = useState("");
   const [genero, setGenero] = useState("");
   const [imagem, setImagem] = useState("");
   const [quantidade, setQuantidade] = useState("");
   const [preco, setPreco] = useState("");
-
- 
 
   const cadastraLivro = (e) => {
     e.preventDefault();
@@ -21,10 +18,9 @@ const Formulario = (props) => {
       genero,
       imagem,
       quantidade,
-      preco
+      preco,
     });
   };
-
 
   return (
     <section className="formulario">
@@ -33,21 +29,21 @@ const Formulario = (props) => {
           label="Titulo do livro"
           placeholder="Digite o titulo."
           valor={titulo}
-          tipo={'string'}
+          tipo={"string"}
           aoAlterado={(valor) => setTitulo(valor)}
         />
         <CampoTexto
           label="Imagem"
           placeholder="Digite o endereço da imagem"
           valor={imagem}
-          tipo={'string'}
+          tipo={"string"}
           aoAlterado={(valor) => setImagem(valor)}
         />
         <CampoTexto
           label="Quantidade"
           placeholder="Digite a quantidade disponível para venda."
           valor={quantidade}
-          tipo={'number'}
+          tipo={"number"}
           aoAlterado={(valor) => setQuantidade(valor)}
         />
 
@@ -55,19 +51,18 @@ const Formulario = (props) => {
           label="Preço"
           placeholder="Digite o preço por unidade"
           valor={preco}
-          tipo={'number'}
+          tipo={"number"}
           aoAlterado={(valor) => setPreco(valor)}
         />
-        <ListaSuspensa 
-        obrigatorio={true}
-        label="Generos Literários"
-        itens={props.livros}
-        valor={genero}
-        aoAlterado={(valor) => setGenero(valor)}
+        <ListaSuspensa
+          obrigatorio={true}
+          label="Generos Literários"
+          itens={props.livros}
+          valor={genero}
+          aoAlterado={(valor) => setGenero(valor)}
         />
         <Botao>Criar Livro</Botao>
       </form>
-     
     </section>
   );
 };
