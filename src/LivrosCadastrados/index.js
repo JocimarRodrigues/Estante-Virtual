@@ -4,9 +4,10 @@ import "./LivrosCadastrados.css";
 
 const LivrosCadastrados = (props) => {
   //console.log(props)
-  console.log(props.categorias)
+ // console.log(props.categorias)
   return (
     <section className='lista-livros'>
+      { /*props.categorias.map((categoria) => <h1>{categoria.nome}</h1>) */}
       {props.livros.map((livro) => (
         <div key={livro.titulo} className='card-livro'>
           <h1>{livro.genero}</h1>

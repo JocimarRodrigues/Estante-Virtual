@@ -80,18 +80,24 @@ function App() {
       categorias={categorias.map((categoria) => categoria.nome)}
       aoNovoLivroCadastrado={livro => AoNovoLivroAdicionado(livro)}
       />
-      {livros.map((livro) => (
-        <Estante 
-        key={livro.titulo}
-        nome={livro.titulo}
-        
-        
-        
-        />
-      ))}
+      <Estante 
+      livrosCadastrados={livrosAdicionados}
+      categorias={categorias}
+      />
        <LivrosCadastrados  livros={livrosAdicionados} categorias={categorias}/>
     </div>
   );
 }
 
 export default App;
+
+
+/*{livros.map((livro) => (
+  <Estante 
+  key={livro.titulo}
+  nome={livro.titulo}
+  
+  
+  
+  />
+))} */
