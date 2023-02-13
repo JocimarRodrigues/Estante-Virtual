@@ -1,14 +1,16 @@
-.estante {
+.estante .lista-livros  {
     text-align: center;
     padding: 32px;
-    background-color: #D9F7E9;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .estante h3 {
     color: black;
     font-size: 32px;
     border-bottom: 4px solid #57C278;
-    display: inline-block;
     padding-bottom: 8px;
     background: red;
+    text-align: center;
 }

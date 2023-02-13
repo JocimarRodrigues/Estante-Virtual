@@ -57,11 +57,6 @@ function App() {
       corPrimaria: '',
       corSecundaria: ''
     },
-    {
-      nome: 'Magia',
-      corPrimaria: '',
-      corSecundaria: ''
-    },
   ]
 
   const [livrosAdicionados, setLivrosAdicionados] = useState(livros);
@@ -84,7 +79,6 @@ function App() {
       livrosCadastrados={livrosAdicionados}
       categorias={categorias}
       />
-       <LivrosCadastrados  livros={livrosAdicionados} categorias={categorias}/>
     </div>
   );
 }
