@@ -18,6 +18,10 @@
     height: 300px;
 }
 
+.modal {
+    display: flex;
+}
+
 @media (max-width: 360px) {
     .lista-livros {
         flex-direction: column;
