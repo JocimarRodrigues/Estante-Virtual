@@ -43,22 +43,22 @@ function App() {
       corSecundaria: ''
     },
     {
-      nome: 'Fantasia-Medieval',
+      nome: 'Fantasia',
       corPrimaria: '',
       corSecundaria: ''
     },
     {
-      nome: 'Fantasia-Medieval',
+      nome: 'SCI-FI',
       corPrimaria: '',
       corSecundaria: ''
     },
     {
-      nome: 'Fantasia-Medieval',
+      nome: 'História',
       corPrimaria: '',
       corSecundaria: ''
     },
     {
-      nome: 'Fantasia-Medieval',
+      nome: 'Magia',
       corPrimaria: '',
       corSecundaria: ''
     },
@@ -77,18 +77,19 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario
-      livros={livros.map((livro) => livro.genero)}
+      categorias={categorias.map((categoria) => categoria.nome)}
       aoNovoLivroCadastrado={livro => AoNovoLivroAdicionado(livro)}
       />
-      {livros.map(livro => <Estante 
-      key={livro.titulo} 
-      imagem={livro.imagem}
-      titulo={livro.titulo}
-      genero={livro.genero}
-      preco={livro.preco}
-      quantidade={livro.quantidade}
-       />)}
-       <LivrosCadastrados  livros={livrosAdicionados}/>
+      {livros.map((livro) => (
+        <Estante 
+        key={livro.titulo}
+        nome={livro.titulo}
+        
+        
+        
+        />
+      ))}
+       <LivrosCadastrados  livros={livrosAdicionados} categorias={categorias}/>
     </div>
   );
 }

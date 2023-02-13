@@ -10,7 +10,7 @@ const Estante = (props) => {
   return (
     <section>
       <div className="estante">
-        <h3>{props.titulo}</h3>
+        <h3>{props.genero}</h3>
         
       </div>
     </section>

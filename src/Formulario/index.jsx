@@ -57,7 +57,7 @@ const Formulario = (props) => {
         <ListaSuspensa
           obrigatorio={true}
           label="Generos Literários"
-          itens={props.livros}
+          itens={props.categorias}
           valor={genero}
           aoAlterado={(valor) => setGenero(valor)}
         />

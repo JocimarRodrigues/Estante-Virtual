@@ -3,12 +3,10 @@ import Estante from "../components/Estante";
 import "./LivrosCadastrados.css";
 
 const LivrosCadastrados = (props) => {
-  console.log(props)
+  //console.log(props)
+  console.log(props.categorias)
   return (
     <section className='lista-livros'>
-      <div>
-        <h2>Teste</h2>
-      </div>
       {props.livros.map((livro) => (
         <div key={livro.titulo} className='card-livro'>
           <h1>{livro.genero}</h1>
