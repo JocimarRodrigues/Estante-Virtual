@@ -6,11 +6,14 @@ const LivrosCadastrados = (props) => {
   console.log(props)
   return (
     <section className='lista-livros'>
+      <div>
+        <h2>Teste</h2>
+      </div>
       {props.livros.map((livro) => (
-        <div key={livro.titulo}>
+        <div key={livro.titulo} className='card-livro'>
+          <h1>{livro.genero}</h1>
           <img src={livro.imagem} alt={livro.imagem}></img>
           <h1>{livro.titulo}</h1>
-          <h1>{livro.genero}</h1>
           <h1>{livro.quantidade}</h1>
           <h1>{livro.preco}</h1>         
         </div>
