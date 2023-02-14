@@ -28,8 +28,6 @@ const Estante = (props) => {
                   titulo={livro.titulo}
                   imagem={livro.imagem}
                   genero={livro.genero}
-                  quantidade={livro.quantidade}
-                  preco={livro.preco}
                   sinopse={livro.sinopse}
                 />
               )

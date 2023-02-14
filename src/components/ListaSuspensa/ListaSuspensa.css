@@ -1,24 +1,66 @@
 
 .lista-suspensa label {
-    color: black;
     display: block;
     margin-bottom: 8px;
-    font-size: 28px;
     font-weight: 500;
-}
-
-.lista-suspensa option {
-    color: black;
 }
 
 .lista-suspensa select {
     
-    color: black;
     background-color: #FFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     width: 100%;
     border: none;
-    font-size: 24px;
-    padding: 24px;
     box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+    .lista-suspensa select {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 360px) {
+    .lista-suspensa label {
+        font-size: 18px;
+    }
+
+    .lista-suspensa select {
+        padding: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 414px) {
+
+    .lista-suspensa label {
+        font-size: 24px;
+    }
+
+    .lista-suspensa select {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 720px) {
+    .lista-suspensa label {
+        font-size: 24px;
+    }
+
+    .lista-suspensa select {
+        padding: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .lista-suspensa label {
+        font-size: 28px;
+    }
+
+    .lista-suspensa select {
+        padding: 24px;
+        font-size: 24px;
+    }
 }

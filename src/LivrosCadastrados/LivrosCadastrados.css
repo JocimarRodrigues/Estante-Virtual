@@ -1,5 +1,4 @@
 .lista-livros h1 {
-    color: white;
     text-align: center;
 }
 
@@ -10,7 +9,7 @@
 }
 
 .card-livro {
-    border: 10px solid white;
+    padding: 6px;
 }
 
 .lista-livros img {
@@ -44,13 +43,29 @@
   }
 
 
-@media (max-width: 360px) {
+@media (min-width: 320px) {
     .lista-livros {
         flex-direction: column;
+        width: 5px;
     }
 
     .lista-livros img {
-        max-width: 500px;
-        width: 400px;
+        margin: 25px;
+        width: 200px;
+        height: 200px;
+    }
+}
+  
+
+@media (min-width: 360px) {
+    .lista-livros {
+        flex-direction: column;
+
+    }
+
+    .lista-livros img {
+        margin: auto;
+        width: 290px;
+        height: 290px;
     }
 }

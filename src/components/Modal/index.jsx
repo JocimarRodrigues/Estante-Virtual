@@ -1,7 +1,7 @@
 import './Modal.css'
 import React, { useState } from 'react'
 
-const Modal = ({mostrarModal, titulo ,fecharModal, imagem, quantidade, preco, sinopse}) => {
+const Modal = ({mostrarModal, titulo ,fecharModal, imagem, sinopse, imagemDoFundo}) => {
 
 
 
@@ -21,7 +21,7 @@ const Modal = ({mostrarModal, titulo ,fecharModal, imagem, quantidade, preco, si
         <div className='modal-grid'>
         <img src={imagem}></img>
         <h1>{titulo}</h1>
-        <h2>{quantidade}</h2>
+        <h2>Descrição</h2>
         <h2></h2>
         <h4>{sinopse}</h4>
         </div>

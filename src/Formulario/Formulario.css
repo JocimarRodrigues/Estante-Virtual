@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     background-image: url(../../public/images/BackgroundLivraria.png);
-    background-size: cover;
+    background-size: 100% 100%;
     
 }
 
@@ -15,3 +15,16 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
+@media (max-width: 360px) {
+    .formulario form {
+        margin: 20px 0;
+        width: 210px;
+    }
+}
+
+@media (max-width: 720px) {
+    .formulario form {
+        margin: 20px 0;
+        width: 60%;
+    }
+}

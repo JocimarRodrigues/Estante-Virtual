@@ -41,23 +41,8 @@ const Formulario = (props) => {
           label="Imagem"
           placeholder="Digite o endereço da imagem"
           valor={imagem}
-          tipo={"string"}
+          tipo={"url"}
           aoAlterado={(valor) => setImagem(valor)}
-        />
-        <CampoTexto
-          label="Quantidade"
-          placeholder="Digite a quantidade disponível para venda."
-          valor={quantidade}
-          tipo={"textarea"}
-          aoAlterado={(valor) => setQuantidade(valor)}
-        />
-
-        <CampoTexto
-          label="Preço"
-          placeholder="Digite o preço por unidade"
-          valor={preco}
-          tipo={"number"}
-          aoAlterado={(valor) => setPreco(valor)}
         />
         <ListaSuspensa
           obrigatorio={true}
