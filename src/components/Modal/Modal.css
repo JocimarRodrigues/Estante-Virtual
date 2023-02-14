@@ -1,4 +1,4 @@
-.conteudo {
+.modal-overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -8,19 +8,122 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: pink;
   }
   
-  .overlay {
+  .modal-conteudo {
      background: #fff;
      padding: 20px;
      border-radius: 5px;
      width: 50%;
      height: 50%;
+     color: pink;
   }
+
+  .modal-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+    
+    
+
+  }
+
+  .modal-grid img {
+    grid-row: 1/4;
+  }
+  
+  .modal-grid h1 {
+      grid-column: 1/1;
+      color: red;
+    }
+    
+    .modal-grid h2 {
+      grid-row: 1/2;
+      color: green;
+      word-wrap: break-word;
+      max-width: 100%;
+    }
+
+  .modal-grid h4 {
+    position: relative;
+    bottom: 0;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    color: red;
+  }
+
+
+
+
   
   .fechar {
     background: red;
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+    color: pink;
   }
+
+  /* 
+    .modal-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 20px;
+  }
+
+  .modal-grid img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+
+  .modal-grid h1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: red;
+  }
+
+  .modal-grid h2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: green;
+  }
+  grid-template-columns: repeat(3, 1fr);
+  */
+
+
+  /*
+    .modal-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+    
+    
+
+  }
+
+  .modal-grid img {
+    grid-row: 1/4;
+  }
+  
+  .modal-grid h1 {
+      grid-column: 1/1;
+      color: red;
+    }
+    
+    .modal-grid h2 {
+      grid-row: 1/2;
+      color: green;
+      flex-wrap: wrap;
+    }
+
+  .modal-grid h4 {
+    position: relative;
+    bottom: 0;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    color: red;
+  }
+
+  */

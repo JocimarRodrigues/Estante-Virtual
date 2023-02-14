@@ -1,7 +1,7 @@
 import './Modal.css'
 import React, { useState } from 'react'
 
-const Modal = ({mostrarModal, titulo ,fecharModal, imagem}) => {
+const Modal = ({mostrarModal, titulo ,fecharModal, imagem, quantidade, preco}) => {
 
 
 
@@ -10,16 +10,21 @@ const Modal = ({mostrarModal, titulo ,fecharModal, imagem}) => {
 
     {mostrarModal && (
 
-    <div className='conteudo'
+    <div className='modal-overlay'
     >
-        <div className='overlay'
+        <div className='modal-conteudo'
         >
             
         <div className='fechar'>
         <button onClick={fecharModal}>X</button>
         </div>
+        <div className='modal-grid'>
         <img src={imagem}></img>
         <h1>{titulo}</h1>
+        <h2>{quantidade}</h2>
+        <h2></h2>
+        <h4>{preco}</h4>
+        </div>
         </div>
     </div>
     )}

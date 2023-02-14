@@ -42,6 +42,8 @@ const LivrosCadastrados = ({titulo, imagem, genero, quantidade, preco, modal}) =
         fecharModal={fecharModal}
         imagem={imagem}
         titulo={titulo}
+        quantidade={quantidade}
+        preco={preco}
         />
     </div>
     </section>
