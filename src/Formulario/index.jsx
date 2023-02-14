@@ -29,6 +29,7 @@ const Formulario = (props) => {
     <section className="formulario">
       <form onSubmit={cadastraLivro}>
         <CampoTexto
+          obrigatorio={true}
           label="Titulo do livro"
           placeholder="Digite o titulo."
           valor={titulo}
@@ -36,6 +37,7 @@ const Formulario = (props) => {
           aoAlterado={(valor) => setTitulo(valor)}
         />
         <CampoTexto
+          obrigatorio={true}
           label="Imagem"
           placeholder="Digite o endereço da imagem"
           valor={imagem}
@@ -64,7 +66,8 @@ const Formulario = (props) => {
           valor={genero}
           aoAlterado={(valor) => setGenero(valor)}
         />
-        <Sinopse 
+        <Sinopse
+        obrigatorio={true} 
         valor={sinopse}
         placeholder="Digite uma sinopse"
         aoAlterado={(valor) => setSinopse(valor)}
