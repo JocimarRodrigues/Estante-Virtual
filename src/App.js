@@ -12,6 +12,7 @@ function App() {
       genero: "Fantasia-Medieval",
       preco: 50,
       quantidade: 5,
+      sinopse: 'Teste',
     },
     {
       imagem: "/images/chika1.png",
@@ -19,6 +20,7 @@ function App() {
       genero: "Fantasia",
       preco: 23,
       quantidade: 5,
+      sinopse: '',
     },
     {
       imagem: "/images/chika.png",
@@ -26,6 +28,7 @@ function App() {
       genero: "SCI-FI",
       preco: 40,
       quantidade: 5,
+      sinopse: '',
     },
     {
       imagem: "/images/chika1.png",
@@ -33,6 +36,7 @@ function App() {
       genero: "História",
       preco: 10,
       quantidade: 5,
+      sinopse: '',
     },
   ];
 

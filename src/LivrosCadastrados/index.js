@@ -10,7 +10,7 @@ import Modal from "../components/Modal";
 
 
 
-const LivrosCadastrados = ({titulo, imagem, genero, quantidade, preco, modal}) => {
+const LivrosCadastrados = ({titulo, imagem, genero, quantidade, preco, sinopse}) => {
   //console.log(props)
  // console.log(props.categorias)
  const [mostrarModal, setMostrarModal] = useState(false);
@@ -34,7 +34,7 @@ const LivrosCadastrados = ({titulo, imagem, genero, quantidade, preco, modal}) =
           <img src={imagem} alt={imagem} style={{cursor: 'pointer'}} onClick={abrirModal}></img>
           <h1>{titulo}</h1>
           <h1 id="h21">{quantidade}</h1>
-          <h1>{preco}</h1>         
+          <h1>{preco}</h1>        
         </div>
         <div>
         <Modal 
@@ -44,6 +44,7 @@ const LivrosCadastrados = ({titulo, imagem, genero, quantidade, preco, modal}) =
         titulo={titulo}
         quantidade={quantidade}
         preco={preco}
+        sinopse={sinopse}
         />
     </div>
     </section>

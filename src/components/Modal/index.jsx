@@ -1,7 +1,7 @@
 import './Modal.css'
 import React, { useState } from 'react'
 
-const Modal = ({mostrarModal, titulo ,fecharModal, imagem, quantidade, preco}) => {
+const Modal = ({mostrarModal, titulo ,fecharModal, imagem, quantidade, preco, sinopse}) => {
 
 
 
@@ -23,7 +23,7 @@ const Modal = ({mostrarModal, titulo ,fecharModal, imagem, quantidade, preco}) =
         <h1>{titulo}</h1>
         <h2>{quantidade}</h2>
         <h2></h2>
-        <h4>{preco}</h4>
+        <h4>{sinopse}</h4>
         </div>
         </div>
     </div>

@@ -3,6 +3,7 @@ import CampoTexto from "../components/CampoTexto";
 import Botao from "../components/Botao";
 import { useState } from "react";
 import ListaSuspensa from "../components/ListaSuspensa";
+import Sinopse from "../components/Sinopse";
 
 const Formulario = (props) => {
   const [titulo, setTitulo] = useState("");
@@ -10,6 +11,7 @@ const Formulario = (props) => {
   const [imagem, setImagem] = useState("");
   const [quantidade, setQuantidade] = useState("");
   const [preco, setPreco] = useState("");
+  const [sinopse, setSinopse] = useState("");
 
   const cadastraLivro = (e) => {
     e.preventDefault();
@@ -19,6 +21,7 @@ const Formulario = (props) => {
       imagem,
       quantidade,
       preco,
+      sinopse
     });
   };
 
@@ -43,7 +46,7 @@ const Formulario = (props) => {
           label="Quantidade"
           placeholder="Digite a quantidade disponível para venda."
           valor={quantidade}
-          tipo={"number"}
+          tipo={"textarea"}
           aoAlterado={(valor) => setQuantidade(valor)}
         />
 
@@ -60,6 +63,11 @@ const Formulario = (props) => {
           itens={props.categorias}
           valor={genero}
           aoAlterado={(valor) => setGenero(valor)}
+        />
+        <Sinopse 
+        valor={sinopse}
+        placeholder="Digite uma sinopse"
+        aoAlterado={(valor) => setSinopse(valor)}
         />
         <Botao>Criar Livro</Botao>
       </form>
