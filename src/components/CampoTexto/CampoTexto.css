@@ -1,75 +1,69 @@
 .campo-texto {
-    margin: 24px 0;
+  margin: 24px 0;
 }
 
 .campo-texto label {
-    display: flex;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: black;
+  display: flex;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: black;
 }
 
 .campo-texto input {
-    background-color: #FFF;
-    color: black;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-    width: 100%;
-    border: none;
-    padding: 24px;
-    box-sizing: border-box;
+  background-color: #fff;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  border: none;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 320px) {
-    .campo-texto input {
-        font-size: 11px;
-    }
+  .campo-texto input {
+    font-size: 11px;
+  }
 }
 
-
 @media (min-width: 360px) {
+  .campo-texto label {
+    font-size: 18px;
+  }
 
-
-    .campo-texto label {
-        font-size: 18px;
-    }
-
-    .campo-texto input {
-        padding: 20px;
-        font-size: 13px;
-    }
+  .campo-texto input {
+    padding: 20px;
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 414px) {
+  .campo-texto label {
+    font-size: 24px;
+  }
 
-    .campo-texto label {
-        font-size: 24px;
-    }
-
-    .campo-texto input {
-        font-size: 16px;
-    }
-
+  .campo-texto input {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 720px) {
-    .campo-texto label {
-        font-size: 24px;
-    }
+  .campo-texto label {
+    font-size: 24px;
+  }
 
-    .campo-texto input {
-        padding: 20px;
-        font-size: 18px;
-    }
+  .campo-texto input {
+    padding: 20px;
+    font-size: 18px;
+  }
 }
 
-
 @media (min-width: 1440px) {
-    .campo-texto label {
-        font-size: 28px;
-    }
+  .campo-texto label {
+    font-size: 28px;
+  }
 
-    .campo-texto input {
-        font-size: 24px;
-        padding: 24px;
-    }
+  .campo-texto input {
+    font-size: 24px;
+    padding: 24px;
+  }
 }

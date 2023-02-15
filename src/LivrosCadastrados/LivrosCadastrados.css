@@ -1,84 +1,58 @@
 .lista-livros h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .lista-livros {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card-livro {
-    padding: 6px;
+  padding: 6px;
 }
 
 .lista-livros img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
-.modal {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    right: 40px;
-    bottom: 40px;
-    border: 1px solid green;
-    background-color: #ffbf00;
-    border-radius: 20px;
-    padding: 20px;
-  }
-  
-  .modal img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
 
 
 @media (min-width: 320px) {
-    .lista-livros {
-        flex-direction: column;
-    }
+  .lista-livros {
+    flex-direction: column;
+  }
 
-    .lista-livros img {
-        margin: 25px;
-        width: 200px;
-        height: 200px;
-    }
+  .lista-livros img {
+    margin: 25px;
+    width: 200px;
+    height: 200px;
+  }
 }
-  
 
 @media (min-width: 360px) {
-    .lista-livros {
-        flex-direction: column;
+  .lista-livros {
+    flex-direction: column;
+  }
 
-    }
-
-    .lista-livros img {
-        margin: auto;
-        width: 290px;
-        height: 290px;
-    }
+  .lista-livros img {
+    margin: auto;
+    width: 290px;
+    height: 290px;
+  }
 }
 
 @media (min-width: 414px) {
-    .lista-livros img {
-        width: 350px;
-        height: 350px;
-    }
+  .lista-livros img {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media (min-width: 720px) {
-    .lista-livros img {
-        width: 276px;
-        height: 330px;
-    }
+  .lista-livros img {
+    width: 276px;
+    height: 330px;
+  }
 }

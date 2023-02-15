@@ -1,75 +1,71 @@
 .sinopse {
-    margin: 24px 0;
+  margin: 24px 0;
 }
 
 .sinopse label {
-    display: flex;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: black;
+  display: flex;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: black;
 }
 
 .sinopse textarea {
-    background-color: #FFF;
-    color: black;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-    width: 100%;
-    max-width: 100%;
-    max-height: 100px;
-    border: none;
-    box-sizing: border-box;
+  background-color: #fff;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 100%;
+  max-height: 100px;
+  border: none;
+  box-sizing: border-box;
 }
 
 @media (min-width: 320px) {
-    .sinopse textarea {
-        padding: 20px;
-    }
+  .sinopse textarea {
+    padding: 20px;
+  }
 }
 
-
-
 @media (min-width: 360px) {
-    .sinopse label {
-        font-size: 18px;
-    }
+  .sinopse label {
+    font-size: 18px;
+  }
 
-    .sinopse textarea {
-        padding: 20px;
-        font-size: 13px;
-    }
+  .sinopse textarea {
+    padding: 20px;
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 414px) {
+  .sinopse label {
+    font-size: 24px;
+  }
 
-    .sinopse label {
-        font-size: 24px;
-    }
-
-    .sinopse textarea {
-        font-size: 16px;
-    }
-
+  .sinopse textarea {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 720px) {
-    .sinopse label {
-        font-size: 24px;
-    }
+  .sinopse label {
+    font-size: 24px;
+  }
 
-    .sinopse textarea {
-        padding: 20px;
-        font-size: 15px;
-        max-height: 100px;
-    }
+  .sinopse textarea {
+    padding: 20px;
+    font-size: 15px;
+    max-height: 100px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .sinopse label {
-        font-size: 28px;
-    }
+  .sinopse label {
+    font-size: 28px;
+  }
 
-    .sinopse textarea {
-        font-size: 24px;
-        padding: 24px;
-    }
+  .sinopse textarea {
+    font-size: 24px;
+    padding: 24px;
+  }
 }

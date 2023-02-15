@@ -9,8 +9,6 @@ const Formulario = (props) => {
   const [titulo, setTitulo] = useState("");
   const [genero, setGenero] = useState("");
   const [imagem, setImagem] = useState("");
-  const [quantidade, setQuantidade] = useState("");
-  const [preco, setPreco] = useState("");
   const [sinopse, setSinopse] = useState("");
 
   const cadastraLivro = (e) => {
@@ -19,10 +17,12 @@ const Formulario = (props) => {
       titulo,
       genero,
       imagem,
-      quantidade,
-      preco,
-      sinopse
+      sinopse,
     });
+    setTitulo("");
+    setImagem("");
+    setSinopse("");
+    setGenero("");
   };
 
   return (
@@ -52,10 +52,10 @@ const Formulario = (props) => {
           aoAlterado={(valor) => setGenero(valor)}
         />
         <Sinopse
-        obrigatorio={true} 
-        valor={sinopse}
-        placeholder="Digite uma sinopse"
-        aoAlterado={(valor) => setSinopse(valor)}
+          obrigatorio={true}
+          valor={sinopse}
+          placeholder="Digite uma sinopse"
+          aoAlterado={(valor) => setSinopse(valor)}
         />
         <Botao>Adicionar Livro</Botao>
       </form>

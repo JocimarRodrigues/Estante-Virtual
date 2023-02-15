@@ -2,8 +2,6 @@ import LivrosCadastrados from "../../LivrosCadastrados";
 import "./Estante.css";
 
 const Estante = (props) => {
-
-
   return (
     <section className="estante">
       {props.categorias.map((categoria) => (
@@ -26,7 +24,5 @@ const Estante = (props) => {
     </section>
   );
 };
-
-
 
 export default Estante;

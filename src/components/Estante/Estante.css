@@ -1,21 +1,21 @@
-.estante .lista-livros  {
-    text-align: center;
-    padding: 32px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.estante .lista-livros {
+  text-align: center;
+  padding: 32px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .estante h3 {
-    color: white;
-    font-size: 32px;
-    padding-bottom: 8px;
-    font-style: italic;
-    background: rgba(0, 0, 0, 0.048);
-    text-align: center;
-    transition: 1s;
+  color: white;
+  font-size: 32px;
+  padding-bottom: 8px;
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.048);
+  text-align: center;
+  transition: 1s;
 }
 
 .estante h3:hover {
-    background: black;
+  background: black;
 }
