@@ -7,14 +7,14 @@ function App() {
   let livros = [
     {
       imagem: "/images/ONomeDoVento.png",
-      titulo: "O nome do Vento",
+      titulo: "O nome do vento",
       genero: "Fantasia",
       sinopse:
         "Da infância numa trupe de artistas itinerantes, passando pelos anos vividos numa cidade hostil e pelo esforço para ingressar na escola de magia, O nome do vento acompanha a trajetória de Kote e as duas forças que movem sua vida: o desejo de aprender o mistério por trás da arte de nomear as coisas e a necessidade de reunir informações sobre o Chandriano – os lendários demônios que assassinaram sua família no passado.",
     },
     {
       imagem: "/images/html.png",
-      titulo: "Html",
+      titulo: "HTML",
       genero: "Programação",
       sinopse:
         "Dominar a linguagem HTML é um requisito básico para quem quer produzir conteúdos no mundo da web, tanto para fins profissionais como pessoais. Em sua versão mais recente, o HTML5, essa plataforma se tornou ainda mais poderosa. Por meio dela, webdesigners e programadores ao redor do mundo têm produzido sites cada vez mais impressionante.",
