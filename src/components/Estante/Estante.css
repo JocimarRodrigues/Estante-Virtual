@@ -21,3 +21,19 @@
 .estante h3:hover {
   background: black;
 }
+
+@media (min-width: 360px) {
+
+  .lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 720px) {
+  .lista {
+    display: block;
+  }
+}
