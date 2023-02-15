@@ -7,10 +7,15 @@
 }
 
 .estante h3 {
-    color: black;
+    color: white;
     font-size: 32px;
-    border-bottom: 4px solid #57C278;
     padding-bottom: 8px;
-    background: red;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.048);
     text-align: center;
+    transition: 1s;
+}
+
+.estante h3:hover {
+    background: black;
 }

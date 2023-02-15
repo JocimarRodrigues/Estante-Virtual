@@ -1,20 +1,8 @@
-import { useState } from "react";
 import LivrosCadastrados from "../../LivrosCadastrados";
 import "./Estante.css";
 
 const Estante = (props) => {
-  //console.log(props.livrosCadastrados.genero)
-  const [mostrarModal, setMostrarModal] = useState(false);
-  const [livroSelecionado, setLivroSelecionado] = useState({});
 
-  const exibirModal = (livro) => {
-    setLivroSelecionado(livro);
-    setMostrarModal(true);
-  };
-
-  const ocultarModal = () => {
-    setMostrarModal(false);
-  };
 
   return (
     <section className="estante">
@@ -29,6 +17,7 @@ const Estante = (props) => {
                   imagem={livro.imagem}
                   genero={livro.genero}
                   sinopse={livro.sinopse}
+                  key={livro.titulo}
                 />
               )
           )}
@@ -41,15 +30,3 @@ const Estante = (props) => {
 
 
 export default Estante;
-
-/* 
-        {props.livrosCadastrados.map((livro) => (
-          <LivrosCadastrados 
-          titulo={livro.titulo}
-          imagem={livro.imagem}
-          genero={livro.genero}
-          quantidade={livro.quantidade}
-          preco={livro.preco}
-          />
-        ))}
-*/

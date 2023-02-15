@@ -33,13 +33,3 @@ const Modal = ({mostrarModal, titulo ,fecharModal, imagem, sinopse, imagemDoFund
 }
 
 export default Modal;
-
-/* const [mostrarModal, setMostrarModal] = useState(false);
-
-const abrirModal = () => {
-    setMostrarModal(true);
-}
-
-const fecharModal = () => {
-    setMostrarModal(false);
-} */

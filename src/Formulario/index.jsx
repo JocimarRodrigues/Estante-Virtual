@@ -57,7 +57,7 @@ const Formulario = (props) => {
         placeholder="Digite uma sinopse"
         aoAlterado={(valor) => setSinopse(valor)}
         />
-        <Botao>Criar Livro</Botao>
+        <Botao>Adicionar Livro</Botao>
       </form>
     </section>
   );

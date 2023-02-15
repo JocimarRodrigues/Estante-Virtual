@@ -46,7 +46,6 @@
 @media (min-width: 320px) {
     .lista-livros {
         flex-direction: column;
-        width: 5px;
     }
 
     .lista-livros img {
@@ -67,5 +66,19 @@
         margin: auto;
         width: 290px;
         height: 290px;
+    }
+}
+
+@media (min-width: 414px) {
+    .lista-livros img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 720px) {
+    .lista-livros img {
+        width: 276px;
+        height: 330px;
     }
 }
