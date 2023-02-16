@@ -2,3 +2,9 @@
   display: flex;
   max-width: 100%;
 }
+
+@media (min-width: 1920px) {
+  .container-header img {
+    width: 100%;
+  }
+}
