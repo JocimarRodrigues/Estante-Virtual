@@ -7,6 +7,7 @@ const Modal = ({
   imagem,
   sinopse,
 }) => {
+
   return (
     <>
       {mostrarModal && (

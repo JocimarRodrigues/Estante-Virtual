@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<div  id='top' >
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Estante-Virtual
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+O projeto deste repositório é uma aplicação em que o usuário pode cadastrar itens em um website e exibi-los em um modal.
 
-### `npm start`
+> Nota: Este é um projeto acadêmico que criei para testar e fixar o aprendizado em React, css, javascript e css grid. O projeto consiste em lidar com a interação de componentes, com o uso de props.
+>
+> O projeto irá sofrer alterações ao decorrer do meu aprendizado, irei adicionar mais funções e refatorar o código com melhores práticas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| 🪧 Estante-Virtual |     |
+| -------------- | --- |
+| 🏷️ Tecnologias | React, JavaScript, HTML, CSS|
+| 🚀 URL         | **https://estantevirtual-jocimar.vercel.app** |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demonstração de uso
 
-### `npm test`
+https://user-images.githubusercontent.com/116130103/219403590-0735185b-1aa3-4098-a23a-b8a7d33be34b.mp4
+>
+<div>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✅ Requisitos técnicos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Front-end:** React, Javascript.
+- **Back-end:** Node.
 
-### `npm run eject`
+## 🖧 Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Formulário de cadastro
+- [x] O usuário pode cadastrar um livro com as seguintes propriedades: título, imagem, gênero literário, sinopse.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Área de categorias
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [x] Nesta área ficarão a imagem dos livros cadastrados pelo usuário;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Modal de descrição.
 
-## Learn More
+- [x] Nesta tela ficará um modal, onde ficarão salvas a imagem, titulo e sinopse dos itens salvos pelo usuário.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Opcionais
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [x] Aplicação responsiva.
 
-### Code Splitting
+## Como usar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### No campo de formulário
 
-### Analyzing the Bundle Size
+- Adicione um título para o livro
+- Insira uma url de imagem válida.
+- Selecione um gênero literário.
+- Adicione uma sinopse.
+- Se todos os requisitos forem válidos o item será adicionado a categoria informada pelo usuário.
+- Clique na imagem do item adicionado para exibir o modal.
+- Clique no "X" do modal para fechar a aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href='#top'>🔼 Voltar ao topo</a>
